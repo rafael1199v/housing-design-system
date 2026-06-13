@@ -13,6 +13,11 @@ export 'src/components/buttons/app_primary_button.dart';
 export 'src/components/buttons/app_secondary_button.dart';
 export 'src/components/buttons/app_text_button.dart';
 
+// Components — cards.
+export 'src/components/cards/app_auth_card.dart';
+export 'src/components/cards/app_card.dart';
+export 'src/components/cards/app_image_card.dart';
+
 // Components — inputs.
 export 'src/components/inputs/app_field_label.dart';
 export 'src/components/inputs/app_search_bar.dart';

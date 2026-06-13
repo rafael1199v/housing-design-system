@@ -7,6 +7,13 @@
 /// ```
 library;
 
+// Components — inputs.
+export 'src/components/inputs/app_field_label.dart';
+export 'src/components/inputs/app_search_bar.dart';
+export 'src/components/inputs/app_segmented_toggle.dart';
+export 'src/components/inputs/app_selectable_option.dart';
+export 'src/components/inputs/app_text_field.dart';
+
 // Components — layout.
 export 'src/components/layout/app_bottom_nav_bar.dart';
 export 'src/components/layout/app_chip.dart';

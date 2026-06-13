@@ -7,6 +7,12 @@
 /// ```
 library;
 
+// Components — buttons.
+export 'src/components/buttons/app_google_button.dart';
+export 'src/components/buttons/app_primary_button.dart';
+export 'src/components/buttons/app_secondary_button.dart';
+export 'src/components/buttons/app_text_button.dart';
+
 // Components — inputs.
 export 'src/components/inputs/app_field_label.dart';
 export 'src/components/inputs/app_search_bar.dart';

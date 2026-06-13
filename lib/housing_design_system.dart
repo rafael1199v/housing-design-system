@@ -7,6 +7,9 @@
 /// ```
 library;
 
+// Components — brand.
+export 'src/components/brand/app_brand_logo.dart';
+
 // Components — buttons.
 export 'src/components/buttons/app_google_button.dart';
 export 'src/components/buttons/app_primary_button.dart';

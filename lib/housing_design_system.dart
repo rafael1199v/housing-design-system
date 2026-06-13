@@ -6,3 +6,6 @@
 /// import 'package:housing_design_system/housing_design_system.dart';
 /// ```
 library;
+
+// Tokens (colours, spacing, radii, elevation, typography, semantic colours).
+export 'src/tokens/tokens.dart';

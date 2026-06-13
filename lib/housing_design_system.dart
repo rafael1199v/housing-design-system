@@ -18,6 +18,9 @@ export 'src/components/cards/app_auth_card.dart';
 export 'src/components/cards/app_card.dart';
 export 'src/components/cards/app_image_card.dart';
 
+// Components — feedback.
+export 'src/components/feedback/app_status_badge.dart';
+
 // Components — inputs.
 export 'src/components/inputs/app_field_label.dart';
 export 'src/components/inputs/app_search_bar.dart';

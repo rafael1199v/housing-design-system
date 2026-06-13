@@ -7,5 +7,12 @@
 /// ```
 library;
 
+// Responsive helpers.
+export 'src/responsive/breakpoints.dart';
+
+// Theme (ColorSchemes + the AppTheme builder).
+export 'src/theme/app_theme.dart';
+export 'src/theme/color_schemes.dart';
+
 // Tokens (colours, spacing, radii, elevation, typography, semantic colours).
 export 'src/tokens/tokens.dart';

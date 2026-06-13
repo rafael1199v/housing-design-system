@@ -7,6 +7,13 @@
 /// ```
 library;
 
+// Components — layout.
+export 'src/components/layout/app_bottom_nav_bar.dart';
+export 'src/components/layout/app_chip.dart';
+export 'src/components/layout/app_labeled_divider.dart';
+export 'src/components/layout/app_scaffold.dart';
+export 'src/components/layout/app_section_header.dart';
+
 // Responsive helpers.
 export 'src/responsive/breakpoints.dart';
 

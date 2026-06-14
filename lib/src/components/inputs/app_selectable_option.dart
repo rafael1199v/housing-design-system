@@ -21,8 +21,8 @@ class AppSelectableOption extends StatelessWidget {
   Widget build(BuildContext context) {
     final ColorScheme colors = Theme.of(context).colorScheme;
 
-    final Color fg = selected ? colors.onPrimary : colors.onSurface;
-    final Color bg = selected ? colors.primary : colors.surfaceContainerLowest;
+    final Color fg = selected ? colors.primary : colors.onSurface;
+    final Color bg = colors.surfaceContainerLowest;
     final Color border = selected ? colors.primary : colors.outlineVariant;
 
     return Material(
@@ -35,7 +35,7 @@ class AppSelectableOption extends StatelessWidget {
           padding: const EdgeInsets.all(AppSpacing.lg),
           decoration: BoxDecoration(
             borderRadius: AppRadii.md,
-            border: Border.all(color: border),
+            border: Border.all(color: border, width: selected ? 2 : 1),
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

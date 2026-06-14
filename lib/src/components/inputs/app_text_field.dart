@@ -17,6 +17,7 @@ class AppTextField extends StatelessWidget {
     this.onFieldSubmitted,
     this.prefixIcon,
     this.suffixIcon,
+    this.errorText,
     this.enabled = true,
     this.uppercaseLabel = false,
     this.labelTrailing,
@@ -37,6 +38,7 @@ class AppTextField extends StatelessWidget {
   final Widget? suffixIcon;
   final bool enabled;
   final bool uppercaseLabel;
+  final String? errorText;
 
   final Widget? labelTrailing;
   final int maxLines;
@@ -58,6 +60,7 @@ class AppTextField extends StatelessWidget {
         hintText: hintText,
         prefixIcon: prefixIcon == null ? null : Icon(prefixIcon, size: 20),
         suffixIcon: suffixIcon,
+        errorText: errorText,
       ),
     );
 

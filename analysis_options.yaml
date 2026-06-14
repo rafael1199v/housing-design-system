@@ -1,0 +1,12 @@
+include: package:flutter_lints/flutter.yaml
+
+# Keep the defaults from flutter_lints; add a couple of sensible extras without
+# generating excessive noise.
+linter:
+  rules:
+    prefer_const_constructors: true
+    prefer_final_locals: true
+    sort_child_properties_last: true
+    directives_ordering: true
+    always_use_package_imports: false
+    prefer_relative_imports: true

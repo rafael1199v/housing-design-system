@@ -21,6 +21,11 @@ export 'src/components/cards/app_auth_card.dart';
 export 'src/components/cards/app_card.dart';
 export 'src/components/cards/app_image_card.dart';
 
+// Components — chat.
+export 'src/components/chat/app_chat_bubble.dart';
+export 'src/components/chat/app_chat_list_tile.dart';
+export 'src/components/chat/app_message_composer.dart';
+
 // Components — feedback.
 export 'src/components/feedback/app_status_badge.dart';
 

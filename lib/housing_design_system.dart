@@ -28,6 +28,7 @@ export 'src/components/feedback/app_status_badge.dart';
 export 'src/components/inputs/app_date_field.dart';
 export 'src/components/inputs/app_dropdown_field.dart';
 export 'src/components/inputs/app_field_label.dart';
+export 'src/components/inputs/app_form_section.dart';
 export 'src/components/inputs/app_search_bar.dart';
 export 'src/components/inputs/app_segmented_toggle.dart';
 export 'src/components/inputs/app_selectable_option.dart';

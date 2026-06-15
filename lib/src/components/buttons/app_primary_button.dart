@@ -29,7 +29,7 @@ class AppPrimaryButton extends StatelessWidget {
             dimension: 22,
             child: CircularProgressIndicator(
               strokeWidth: 2.4,
-              valueColor: AlwaysStoppedAnimation<Color>(colors.onPrimary),
+              valueColor: AlwaysStoppedAnimation<Color>(colors.primary),
             ),
           )
         : Row(

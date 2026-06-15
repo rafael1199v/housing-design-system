@@ -13,11 +13,20 @@ abstract final class AppTheme {
 
   static ThemeData get householder => from(householderColorScheme);
 
+  static ThemeData get studentDark =>
+      from(studentDarkColorScheme, semantics: AppSemanticColors.dark);
+
+  static ThemeData get householderDark =>
+      from(householderDarkColorScheme, semantics: AppSemanticColors.dark);
+
   static ThemeData from(
     ColorScheme scheme, {
     AppSemanticColors semantics = AppSemanticColors.standard,
   }) {
-    final TextTheme textTheme = AppTypography.textTheme;
+    final TextTheme textTheme = AppTypography.textTheme.apply(
+      bodyColor: scheme.onSurface,
+      displayColor: scheme.onSurface,
+    );
 
     OutlineInputBorder inputBorder(Color color, [double width = 1]) =>
         OutlineInputBorder(
@@ -43,13 +52,13 @@ abstract final class AppTheme {
         titleTextStyle: textTheme.titleLarge,
       ),
 
-      cardTheme: const CardThemeData(
-        color: Colors.white,
+      cardTheme: CardThemeData(
+        color: scheme.surfaceContainerLowest,
         surfaceTintColor: Colors.transparent,
         elevation: 0,
         margin: EdgeInsets.zero,
         clipBehavior: Clip.antiAlias,
-        shape: RoundedRectangleBorder(borderRadius: AppRadii.lg),
+        shape: const RoundedRectangleBorder(borderRadius: AppRadii.lg),
       ),
 
       filledButtonTheme: FilledButtonThemeData(
@@ -139,6 +148,9 @@ abstract final class AppTheme {
               BorderRadius.vertical(top: Radius.circular(AppRadii.xlValue)),
         ),
       ),
+      progressIndicatorTheme: ProgressIndicatorThemeData(
+        color: scheme.onSurface
+      )
     );
   }
 }

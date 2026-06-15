@@ -72,4 +72,66 @@ abstract final class AppColors {
   static const Color accent = Color(0xFFB07B3E);
   static const Color onAccent = Color(0xFFFFFFFF);
   static const Color accentContainer = Color(0xFFF6ECDF);
+
+  // =======================================================================
+  // DARK THEME PALETTE
+  // Material 3 dark conventions derived from the same brand teal. Feeds the
+  // dark [ColorScheme]s in `theme/color_schemes.dart`.
+  // =======================================================================
+
+  // --- Dark brand greens (lighter so they read on dark surfaces) ----------
+  static const Color studentPrimaryDark = Color(0xFF80D4C4);
+  static const Color householderPrimaryDark = Color(0xFF7CD3DE);
+  static const Color onPrimaryDark = Color(0xFF00382F);
+  static const Color primaryContainerDark = Color(0xFF005046);
+  static const Color onPrimaryContainerDark = Color(0xFFB8EDDF);
+
+  // --- Dark secondary / tertiary -----------------------------------------
+  static const Color secondaryDark = Color(0xFFB1CCB4);
+  static const Color onSecondaryDark = Color(0xFF1D3525);
+  static const Color secondaryContainerDark = Color(0xFF344B3B);
+  static const Color onSecondaryContainerDark = Color(0xFFC9E7CA);
+
+  static const Color tertiaryDark = Color(0xFFA1D4C3);
+  static const Color onTertiaryDark = Color(0xFF00382E);
+  static const Color tertiaryContainerDark = Color(0xFF00513F);
+  static const Color onTertiaryContainerDark = Color(0xFFBDEBDD);
+
+  // --- Dark error ---------------------------------------------------------
+  static const Color errorDark = Color(0xFFFFB4AB);
+  static const Color onErrorDark = Color(0xFF690005);
+  static const Color errorContainerDark = Color(0xFF93000A);
+  static const Color onErrorContainerDark = Color(0xFFFFDAD6);
+
+  // --- Dark surfaces & text ----------------------------------------------
+  static const Color surfaceDark = Color(0xFF0F1513);
+  static const Color onSurfaceDark = Color(0xFFDEE4E1);
+  static const Color onSurfaceVariantDark = Color(0xFFBFC9C4);
+
+  static const Color surfaceContainerLowestDark = Color(0xFF0A0F0E);
+  static const Color surfaceContainerLowDark = Color(0xFF171D1B);
+  static const Color surfaceContainerDark = Color(0xFF1B211F);
+  static const Color surfaceContainerHighDark = Color(0xFF252B29);
+  static const Color surfaceContainerHighestDark = Color(0xFF303634);
+  static const Color surfaceDimDark = Color(0xFF0F1513);
+  static const Color surfaceBrightDark = Color(0xFF353B39);
+
+  // --- Dark outlines ------------------------------------------------------
+  static const Color outlineDark = Color(0xFF899390);
+  static const Color outlineVariantDark = Color(0xFF3F4946);
+
+  // --- Dark inverse -------------------------------------------------------
+  static const Color inverseSurfaceDark = Color(0xFFDEE4E1);
+  static const Color onInverseSurfaceDark = Color(0xFF2D312F);
+  static const Color inversePrimaryDark = Color(0xFF006A5B);
+
+  // --- Dark extra semantic colours ---------------------------------------
+  // Muted containers + lighter foregrounds.
+  static const Color successDark = Color(0xFF7FD8B0);
+  static const Color onSuccessDark = Color(0xFF003824);
+  static const Color successContainerDark = Color(0xFF1E3A2C);
+
+  static const Color accentDark = Color(0xFFE5BE8C);
+  static const Color onAccentDark = Color(0xFF432C0E);
+  static const Color accentContainerDark = Color(0xFF3A2E1E);
 }

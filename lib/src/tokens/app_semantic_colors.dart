@@ -29,6 +29,15 @@ class AppSemanticColors extends ThemeExtension<AppSemanticColors> {
     accentContainer: AppColors.accentContainer,
   );
 
+  static const AppSemanticColors dark = AppSemanticColors(
+    success: AppColors.successDark,
+    onSuccess: AppColors.onSuccessDark,
+    successContainer: AppColors.successContainerDark,
+    accent: AppColors.accentDark,
+    onAccent: AppColors.onAccentDark,
+    accentContainer: AppColors.accentContainerDark,
+  );
+
   @override
   AppSemanticColors copyWith({
     Color? success,

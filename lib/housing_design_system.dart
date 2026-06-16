@@ -21,11 +21,19 @@ export 'src/components/cards/app_auth_card.dart';
 export 'src/components/cards/app_card.dart';
 export 'src/components/cards/app_image_card.dart';
 
+// Components — chat.
+export 'src/components/chat/app_chat_bubble.dart';
+export 'src/components/chat/app_chat_list_tile.dart';
+export 'src/components/chat/app_message_composer.dart';
+
 // Components — feedback.
 export 'src/components/feedback/app_status_badge.dart';
 
 // Components — inputs.
+export 'src/components/inputs/app_date_field.dart';
+export 'src/components/inputs/app_dropdown_field.dart';
 export 'src/components/inputs/app_field_label.dart';
+export 'src/components/inputs/app_form_section.dart';
 export 'src/components/inputs/app_search_bar.dart';
 export 'src/components/inputs/app_segmented_toggle.dart';
 export 'src/components/inputs/app_selectable_option.dart';

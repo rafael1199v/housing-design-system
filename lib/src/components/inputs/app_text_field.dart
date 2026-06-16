@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../../tokens/app_spacing.dart';
 import 'app_field_label.dart';
@@ -22,6 +23,7 @@ class AppTextField extends StatelessWidget {
     this.uppercaseLabel = false,
     this.labelTrailing,
     this.maxLines = 1,
+    this.inputFormatters,
   });
 
   final TextEditingController? controller;
@@ -42,6 +44,7 @@ class AppTextField extends StatelessWidget {
 
   final Widget? labelTrailing;
   final int maxLines;
+  final List<TextInputFormatter>? inputFormatters;
 
   @override
   Widget build(BuildContext context) {
@@ -54,6 +57,7 @@ class AppTextField extends StatelessWidget {
       onChanged: onChanged,
       onFieldSubmitted: onFieldSubmitted,
       enabled: enabled,
+      inputFormatters: inputFormatters,
       maxLines: obscureText ? 1 : maxLines,
       style: Theme.of(context).textTheme.bodyLarge,
       decoration: InputDecoration(

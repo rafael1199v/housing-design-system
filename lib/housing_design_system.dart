@@ -46,6 +46,9 @@ export 'src/components/layout/app_labeled_divider.dart';
 export 'src/components/layout/app_scaffold.dart';
 export 'src/components/layout/app_section_header.dart';
 
+// Components — media.
+export 'src/components/media/app_avatar.dart';
+
 // Responsive helpers.
 export 'src/responsive/breakpoints.dart';
 

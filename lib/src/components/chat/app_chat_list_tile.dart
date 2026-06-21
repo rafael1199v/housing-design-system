@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../tokens/app_radii.dart';
 import '../../tokens/app_spacing.dart';
 import '../cards/app_card.dart';
+import '../media/app_avatar.dart';
 
 class AppChatListTile extends StatelessWidget {
   const AppChatListTile({
@@ -11,6 +12,7 @@ class AppChatListTile extends StatelessWidget {
     this.subtitle,
     this.timeLabel,
     this.unreadCount = 0,
+    this.avatar,
     this.onTap,
   });
 
@@ -18,6 +20,8 @@ class AppChatListTile extends StatelessWidget {
   final String? subtitle;
   final String? timeLabel;
   final int unreadCount;
+
+  final ImageProvider? avatar;
   final VoidCallback? onTap;
 
   @override
@@ -32,11 +36,7 @@ class AppChatListTile extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          CircleAvatar(
-            radius: 24,
-            backgroundColor: cs.surfaceContainerLow,
-            child: Icon(Icons.person_outline, color: cs.outline),
-          ),
+          AppAvatar(image: avatar, name: title, radius: 24),
           const SizedBox(width: AppSpacing.md),
           Expanded(
             child: Column(
